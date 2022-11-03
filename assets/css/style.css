@@ -751,10 +751,12 @@ EXPERIENCE SECTION
 }
 /* END OF EXPEREINCE SECTION  */
 
-/****************************************************************
+/* ***************************************************************
 SKILLS SECTION 
 ********************************/
+
 #skill-section {
+  position:relative;
   background-color: #232b35;
   z-index: 1;
 }
@@ -848,7 +850,7 @@ SKILLS SECTION
   width: 100%;
 
   height: 100%;
-
+  
   
   background-size: cover;
   background-position: center center;
@@ -983,7 +985,7 @@ SKILLS SECTION
 }
 .project-container-main {
   max-width: 1280px;
-  padding: 3em 5%;
+  padding: 3em 0;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1214,7 +1216,7 @@ footer {
 MEDIA QUERY - TABLET SIZE
 ******/
 
-@media screen and (min-width: 540px) and (max-width: 1023px) {
+@media screen and (min-width: 540px) and (max-width: 1027px) {
   /* HEADER  --TABLET  */
   .header h3 {
     font-size: 2.2rem;
@@ -1348,6 +1350,14 @@ MEDIA QUERY - TABLET SIZE
   }
 
   /* SKILLS --TABLET  */
+  body #scene{
+    width:80%;
+    
+    
+  }
+  li.item>label{
+    font-size:1em;
+  }
   .skill-container-left {
     padding: 1.2em;
   }
@@ -1737,9 +1747,6 @@ MEDIA QUERY - LAPTOP SIZE
 
   /* PROJECT SECTION -- LAPTOP */
 
-  .project-container-main {
-    padding: 5em 0%;
-  }
   .project-header i {
     font-size: 3.2rem;
   }
@@ -1748,7 +1755,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
   .project-header p {
     font-size: 2.8rem;
-    margin-bottom: 2.5em;
+    /* margin-bottom: 2.5em; */
   }
   .flex-card{
     justify-content: space-between;
