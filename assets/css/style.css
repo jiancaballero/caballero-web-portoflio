@@ -754,6 +754,133 @@ EXPERIENCE SECTION
 /* ***************************************************************
 SKILLS SECTION 
 ********************************/
+@keyframes loadbar-html  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:90%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-html  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:90%;
+  }
+
+}
+@keyframes loadbar-js  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:94%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-js  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:94%;
+  }
+
+}
+@keyframes loadbar-react  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-react  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
+
+@keyframes loadbar-node  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:90%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-node {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:90%;
+  }
+
+}
+@keyframes loadbar-sql {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-sql  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
+@keyframes loadbar-adobe  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
+
+@-webkit-keyframes loadbar-adobe  {
+  0% {
+     width:0%;
+  }
+  
+  100% {
+     width:98%;
+  }
+
+}
 
 #skill-section {
   position:relative;
@@ -796,7 +923,11 @@ SKILLS SECTION
   padding: 1.5em;
   border-radius: 0 0 12px 12px;
 }
-.skill-container-right h3 {
+.skill-label{
+  
+  justify-content: space-between;
+}
+.skill-label h3 {
   font-weight: 500;
   letter-spacing: 0.15em;
 }
@@ -812,25 +943,58 @@ SKILLS SECTION
   box-shadow: 2px 5px 4px #e3e3e3;
 }
 .skill-bar::before {
-  width: 90%;
+  
   height: 20px;
   display: block;
   content: "";
+
 }
 .html-skill-bar::before {
+  width: 90%;
   background: var(--teal);
+  animation:loadbar-html 3s;
+  -webkit-animation:loadbar-html 3s;
+  animation-iteration-count: infinite;
 }
 
 .js-skill-bar::before {
   background: var(--teal);
+  width: 94%;
+  animation:loadbar-js 3s;
+  -webkit-animation:loadbar-js 3s;
+  animation-iteration-count: infinite;
 }
+.react-skill-bar::before {
+  background: var(--teal);
+  width: 98%;
+  animation:loadbar-react 3s;
+  -webkit-animation:loadbar-react 3s;
+  animation-iteration-count: infinite;
+}
+.node-skill-bar::before {
+  background: var(--teal);
+  width: 90%;
+  animation:loadbar-node 3s;
+  -webkit-animation:loadbar-node 3s;
+  animation-iteration-count: infinite;
+}
+
 
 .sql-skill-bar::before {
   background: var(--teal);
+  width: 98%;
+  animation:loadbar-sql 3s;
+  -webkit-animation:loadbar-sql 3s;
+  animation-iteration-count: infinite;
 }
 .adobe-skill-bar::before {
   background: var(--teal);
+  animation:loadbar-adobe 3s;
+  -webkit-animation:loadbar-adobe 3s;
+  animation-iteration-count: infinite;
+  width: 98%;
 }
+
 
 .skill-title {
   justify-content: space-between;
@@ -1061,6 +1225,8 @@ SKILLS SECTION
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2em;
+  display:flex;
+  justify-content: center;
 }
 .view-git-button a {
   text-transform: uppercase;
@@ -1711,6 +1877,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
 
   /* SKILLS -- LAPTOP  */
+ 
   .skill-container-left {
     padding: 1.6em;
   }
@@ -1725,7 +1892,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
   .skill-container-right {
     padding: 5em;
-    height: 35em;
+    height: 45em;
   }
 
   .skill-container-right h3 {
@@ -1776,7 +1943,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
   .tech-stack {
     margin-bottom: 1em;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .tech-stack img {
     width: 20px;
