@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -25,13 +25,13 @@
           <ul class="nav-links-main fade-in-top">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#experience">WORK</a></li>
-            <li><a href="#scene">SKILLS</a></li>
+            <li><a href="#skill-section">SKILLS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
           <ul class="social-links-main fade-in-right">
             <li><a href="https://www.facebook.com/jc.caballero.503/"  target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin"  target="_blank"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jc-caballero-762094192/"  target="_blank"><i class="fa-brands fa-linkedin"  target="_blank"></i></a></li>
             <li><a href="https://gitlab.com/users/jiancaballero/projects" target="_blank"><i class="fa-brands fa-gitlab"></i></a></i></li>
           </ul>
         </div>
@@ -42,7 +42,7 @@
           <ul class="nav-links flex-container">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#experience">WORK</a></li>
-            <li><a href="#skill">SKILLS</a></li>
+            <li><a href="#skill-section">SKILLS</a></li>
             <li><a href="#project">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
@@ -313,7 +313,7 @@
                       </div>
                       <!-- <p>A javascript game inspired by the app Mind Cards. Pautakards is a Filipino strategic card game.</p> -->
                       <div class="view-git-button">
-                        <a href="https://resonant-entremet-80afea.netlify.app/"target="_blank"  class="demo-button btn btn-md">View Demo</a>
+                        <a href="https://pautakards-js-game.netlify.app/"target="_blank"  class="demo-button btn btn-md">View Demo</a>
                         <a href="https://github.com/jiancaballero/js-game-pautakards" target="_blank" class="git-button btn btn-md">View GIT repo</a>
                       </div>
                   </div>
@@ -393,7 +393,7 @@
                   </div>
                   <p></p>
                   <div class="view-git-button">
-                    <a href="https://glowing-longma-2d8a49.netlify.app/" target="_blank"  class="demo-button btn btn-md">View Demo</a>
+                    <a href="https://uchiha-resto-app.netlify.app/" target="_blank"  class="demo-button btn btn-md">View Demo</a>
                     <a href="https://gitlab.com/jiancaballero/caballero-dev-projects/-/tree/003-react-resto-app" target="_blank" class="git-button btn btn-md">View GIT repo</a>
                   </div>
               </div>
@@ -444,7 +444,7 @@
                 </div>
                 <p></p>
                 <div class="view-git-button">
-                  <a href="https://lighthearted-kelpie-631d27.netlify.app/" class="demo-button btn btn-md">View Demo</a>
+                  <a href="https://casa-caballero.netlify.app/" target="_blank"   class="demo-button btn btn-md">View Demo</a>
                   <a href="https://gitlab.com/jiancaballero/caballero-dev-projects/-/tree/004-fs-mern-hotel-website" class="git-button btn btn-md">View GIT repo</a>
                 </div>
             </div>
@@ -452,9 +452,6 @@
         </div>
 
     </div>
-
-    
-
 </div>
        </div>
         </div>
@@ -496,29 +493,28 @@
             </div>
             <div class="contact-bottom-right flex-container">
               <div class="contact-input">
-                <label for="name">Name</label>
-              <input type="text" name="name" class="name" />
+                <label for="name">Email Address</label>
+              <input type="text" name="email" id="email" placeholder="Enter your email address" />
               </div>
               <div class="contact-input">
-                <label for="email">Email</label>
-              <input type="text" name="email" class="name" />
+                <label for="email">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="Enter a subject" />
               </div>
               <div class="contact-input">
                 <label for="name">Message</label>
-              <textarea name="message" class="message" rows="10"></textarea>
+              <textarea name="message" id="message" rows="10" placeholder="Enter your message"></textarea>
               </div>
               
             </div>
           </div>
-          <div class="contact-submit flex-container">
-            <input
-              class="contact-submit-button"
-              type="submit"
-              value="SUBMIT"
-            />
-          </div>
+          
         </div>
       </form>
+      <div class="contact-submit flex-container">
+        <button id="contact-submit-button" >
+        Submit
+        </button>
+      </div>
      
     </section>
 
@@ -531,5 +527,6 @@
     <script>
       AOS.init();
     </script>
+    
   </body>
 </html>
