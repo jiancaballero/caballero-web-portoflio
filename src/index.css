@@ -758,6 +758,11 @@ SKILLS SECTION
   
   
 }
+.flex-card {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 @keyframes loadbar-html {
   0% {
     width: 0%;
@@ -1873,10 +1878,7 @@ MEDIA QUERY - LAPTOP SIZE
     font-size: 2.8rem;
     /* margin-bottom: 2.5em; */
   }
-  .flex-card {
-    justify-content: space-between;
-  }
-
+ 
   .project-info {
     padding: 2em;
   }
