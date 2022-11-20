@@ -11,7 +11,7 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica;
-  src: url("assets/fonts/HelveticaNeue.ttc");
+  src: url("../src/assets/font/HelveticaNeue.ttc");
 }
 :root {
   /* COLORS */
@@ -73,9 +73,8 @@ body {
     webkit-transform: translateX(0);
   }
 }
-.fade-in-top{
+.fade-in-top {
   -webkit-animation: fade-in-top 2s both;
- 
 }
 @-webkit-keyframes fade-in-top {
   0% {
@@ -244,7 +243,6 @@ body {
     webkit-transform: translateY(0);
   }
 } */
-
 
 .fade-in-bottom {
   -webkit-animation: fade-in-bottom 2s both;
@@ -433,7 +431,6 @@ header span {
 .hero-left {
   top: 0;
   flex: 1 1 65%;
-  
 }
 .hero-left img {
   object-fit: cover;
@@ -474,7 +471,7 @@ header span {
 .about-title h1 {
   color: var(--light-gray);
   opacity: 0.3;
-  font-size:12rem;
+  font-size: 12rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   position: absolute;
@@ -754,136 +751,131 @@ EXPERIENCE SECTION
 /* ***************************************************************
 SKILLS SECTION 
 ********************************/
-@keyframes loadbar-html  {
-  0% {
-     width:0%;
-  }
+.gradeCert{
+  display:inline-block;
+  margin-top:1em;
+  font-size:1.2rem;
   
-  100% {
-     width:90%;
+  
+}
+@keyframes loadbar-html {
+  0% {
+    width: 0%;
   }
 
+  100% {
+    width: 90%;
+  }
 }
 
-@-webkit-keyframes loadbar-html  {
+@-webkit-keyframes loadbar-html {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:90%;
+    width: 0%;
   }
 
+  100% {
+    width: 90%;
+  }
 }
-@keyframes loadbar-js  {
+@keyframes loadbar-js {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:94%;
+    width: 0%;
   }
 
+  100% {
+    width: 94%;
+  }
 }
 
-@-webkit-keyframes loadbar-js  {
+@-webkit-keyframes loadbar-js {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:94%;
+    width: 0%;
   }
 
+  100% {
+    width: 94%;
+  }
 }
-@keyframes loadbar-react  {
+@keyframes loadbar-react {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
 
-@-webkit-keyframes loadbar-react  {
+@-webkit-keyframes loadbar-react {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
 
-@keyframes loadbar-node  {
+@keyframes loadbar-node {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:90%;
+    width: 0%;
   }
 
+  100% {
+    width: 90%;
+  }
 }
 
 @-webkit-keyframes loadbar-node {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:90%;
+    width: 0%;
   }
 
+  100% {
+    width: 90%;
+  }
 }
 @keyframes loadbar-sql {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
 
-@-webkit-keyframes loadbar-sql  {
+@-webkit-keyframes loadbar-sql {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
-@keyframes loadbar-adobe  {
+@keyframes loadbar-adobe {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
 
-@-webkit-keyframes loadbar-adobe  {
+@-webkit-keyframes loadbar-adobe {
   0% {
-     width:0%;
-  }
-  
-  100% {
-     width:98%;
+    width: 0%;
   }
 
+  100% {
+    width: 98%;
+  }
 }
 
 #skill-section {
-  position:relative;
+  position: relative;
   background-color: #232b35;
   z-index: 1;
 }
@@ -923,8 +915,7 @@ SKILLS SECTION
   padding: 1.5em;
   border-radius: 0 0 12px 12px;
 }
-.skill-label{
-  
+.skill-label {
   justify-content: space-between;
 }
 .skill-label h3 {
@@ -943,85 +934,62 @@ SKILLS SECTION
   box-shadow: 2px 5px 4px #e3e3e3;
 }
 .skill-bar::before {
-  
   height: 20px;
   display: block;
   content: "";
-
 }
 .html-skill-bar::before {
   width: 90%;
   background: var(--teal);
-  animation:loadbar-html 3s;
-  -webkit-animation:loadbar-html 3s;
+  animation: loadbar-html 3s;
+  -webkit-animation: loadbar-html 3s;
   animation-iteration-count: infinite;
 }
 
 .js-skill-bar::before {
   background: var(--teal);
   width: 94%;
-  animation:loadbar-js 3s;
-  -webkit-animation:loadbar-js 3s;
+  animation: loadbar-js 3s;
+  -webkit-animation: loadbar-js 3s;
   animation-iteration-count: infinite;
 }
 .react-skill-bar::before {
   background: var(--teal);
   width: 98%;
-  animation:loadbar-react 3s;
-  -webkit-animation:loadbar-react 3s;
+  animation: loadbar-react 3s;
+  -webkit-animation: loadbar-react 3s;
   animation-iteration-count: infinite;
 }
 .node-skill-bar::before {
   background: var(--teal);
   width: 90%;
-  animation:loadbar-node 3s;
-  -webkit-animation:loadbar-node 3s;
+  animation: loadbar-node 3s;
+  -webkit-animation: loadbar-node 3s;
   animation-iteration-count: infinite;
 }
-
 
 .sql-skill-bar::before {
   background: var(--teal);
   width: 98%;
-  animation:loadbar-sql 3s;
-  -webkit-animation:loadbar-sql 3s;
+  animation: loadbar-sql 3s;
+  -webkit-animation: loadbar-sql 3s;
   animation-iteration-count: infinite;
 }
 .adobe-skill-bar::before {
   background: var(--teal);
-  animation:loadbar-adobe 3s;
-  -webkit-animation:loadbar-adobe 3s;
+  animation: loadbar-adobe 3s;
+  -webkit-animation: loadbar-adobe 3s;
   animation-iteration-count: infinite;
   width: 98%;
 }
-
 
 .skill-title {
   justify-content: space-between;
 }
 
-
 /* PROJECTS SECTION */
 /* PROJECTS SECTION */
 .card-container .card .icon {
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  height: 100%;
-  
-  
-  background-size: cover;
-  background-position: center center;
-
-}
-.card-container .card .icon {
-
   position: absolute;
 
   top: 0;
@@ -1034,33 +1002,43 @@ SKILLS SECTION
 
   background-size: cover;
   background-position: center center;
+}
+.card-container .card .icon {
+  position: absolute;
 
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-size: cover;
+  background-position: center center;
 }
-.pautakards{
-  background-image:url(../images/pautakards.png);
+.pautakards {
+  background-image: url(../src/assets/images/pautakards.png);
 }
-.todo{
-  background-image:url(../images/todo.png);
+.todo {
+  background-image: url(../src/assets/images/todo.png);
 }
-.resto{
-  background-image:url(../images/restoapp.png);
+.resto {
+  background-image: url(../src/assets/images/restoapp.png);
 }
-.hotel{
-  background-image:url(../images/casa-caballero.png);
+.hotel {
+  background-image: url(../src/assets/images/casa-caballero.png);
 }
 
 .card-container .card .slide {
-
   width: 300px;
 
   height: 200px;
 
   transition: 0.5s;
-
 }
 
 .card-container .card .slide.slide1 {
-
   position: relative;
 
   display: flex;
@@ -1071,20 +1049,16 @@ SKILLS SECTION
 
   z-index: 1;
 
-  transition: .7s;
+  transition: 0.7s;
 
   transform: translateY(100px);
-
 }
 
-.card-container .card:hover .slide.slide1{
-
+.card-container .card:hover .slide.slide1 {
   transform: translateY(0px);
-
 }
 
 .card-container .card .slide.slide2 {
-
   position: relative;
 
   display: flex;
@@ -1097,50 +1071,40 @@ SKILLS SECTION
 
   box-sizing: border-box;
 
-  transition: .8s;
+  transition: 0.8s;
 
   transform: translateY(-100px);
 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.card-container .card:hover .slide.slide2{
-
+.card-container .card:hover .slide.slide2 {
   transform: translateY(0);
-
 }
-
 
 .card-container .card .slide.slide2 .content p {
-
   margin: 0;
-  margin-bottom:1.5em;
+  margin-bottom: 1.5em;
 
   padding: 0;
 
   text-align: center;
 
   color: var(--darkish-blue);
-  font-weight:200;
-  font-size:1.6rem;
-
+  font-weight: 200;
+  font-size: 1.6rem;
 }
 
 .card-container .card .slide.slide2 .content h3 {
-
   margin: 0 0 10px 0;
 
   padding: 0;
 
- 
-
   text-align: center;
 
   color: var(--teal);
-  font-size:2.5rem;
-
-} 
+  font-size: 2.5rem;
+}
 #project {
   background: var(--white-gray);
   padding: 5em;
@@ -1216,35 +1180,27 @@ SKILLS SECTION
   width: 20px;
   height: 20px;
 }
-.git-button{
-  background:none;
-  color:var(--teal);
+.git-button {
+  background: none;
+  color: var(--teal);
   border: 1px solid var(--teal);
 }
 .view-git-button {
   width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 2em;
-  display:flex;
-  justify-content: center;
+
 }
 .view-git-button a {
+  display: inline-block;
   text-transform: uppercase;
-  margin: 0 0.5em;
+  margin: 1em 0.5em;
   font-size: 1rem;
   padding: 0.4em 0.8em;
   /* box-shadow: 2px 2px 6px var(--opactity-teal); */
   transition: all 250ms ease-in-out;
-  
 }
 .view-git-button a:hover {
   background-color: var(--teal-hover);
 }
-
-
-
-
-
 
 /* CONTACT SECTION*/
 #contact {
@@ -1262,10 +1218,9 @@ SKILLS SECTION
   align-items: center;
   margin-bottom: 0.9em;
   row-gap: 1.2em;
-  width:100%;
+  width: 100%;
 }
 .contact-bottom-right {
- 
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 0.9em;
@@ -1296,56 +1251,59 @@ SKILLS SECTION
   color: var(--light-teal);
 }
 .contact-bottom-right label {
-  color:var(--teal);
+  color: var(--teal);
   font-size: 1.2rem;
 }
-.contact-input{
+.contact-input {
   margin-bottom: 1em;
-  width:100%;
+  width: 100%;
   text-align: left;
 }
 
 .contact-input input[type="text"] {
   height: 2em;
   width: 100%;
-  padding: .5em;
+  padding: 0.5em;
   box-shadow: 2px -2px 8px var(--light-gray);
   border: none;
-  color:var(--dark-night-black);
+  color: var(--dark-night-black);
   font-family: "Helvetica Neue";
-  
 }
 
-input:focus,textarea{
-  outline:none !important;
+input:focus,
+textarea {
+  outline: none !important;
 }
-.contact-bottom-right input[type="text"]:focus,textarea:focus
-{
+.contact-bottom-right input[type="text"]:focus,
+textarea:focus {
   background-color: var(--light-gray);
 }
 .contact-input textarea {
   width: 100%;
   resize: none;
-  padding: .5em;
+  padding: 0.5em;
   box-shadow: 2px -2px 8px var(--light-gray);
   border: none;
-  color:var(--dark-night-black);
+  color: var(--dark-night-black);
   font-family: "Helvetica Neue";
 }
+<<<<<<< HEAD:assets/css/style.css
 .contact-submit button{
+=======
+.contact-submit-button {
+>>>>>>> react-portfolio:src/index.css
   border-radius: 80px;
   background: var(--dark-night-black);
   border: none;
   color: var(--teal);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 0.75em 1.9em;
   cursor: pointer;
   letter-spacing: 3px;
   margin: 2.5em 0;
   box-shadow: 2px -2px 8px var(--teal);
 }
-
 
 .contact-submit {
   justify-content: center;
@@ -1424,8 +1382,8 @@ MEDIA QUERY - TABLET SIZE
   .about-header {
     grid-area: name;
   }
-  .about-title h1{
-    font-size:21em;
+  .about-title h1 {
+    font-size: 21em;
   }
   .about-image {
     grid-area: image;
@@ -1516,13 +1474,11 @@ MEDIA QUERY - TABLET SIZE
   }
 
   /* SKILLS --TABLET  */
-  body #scene{
-    width:80%;
-    
-    
+  body #scene {
+    width: 80%;
   }
-  li.item>label{
-    font-size:1em;
+  li.item > label {
+    font-size: 1em;
   }
   .skill-container-left {
     padding: 1.2em;
@@ -1719,7 +1675,7 @@ MEDIA QUERY - LAPTOP SIZE
   .hero-right {
     padding: 1.5em;
   }
-  .hero-left img{
+  .hero-left img {
     object-position: 85% 10%;
   }
   /* ABOUT-- LAPTOP  */
@@ -1732,22 +1688,20 @@ MEDIA QUERY - LAPTOP SIZE
       "cv cv";
     align-items: flex-start;
   }
-  .about-title h1{
-    font-size:20em;
-    font-weight:700;
-    letter-spacing:.5em;
-    
+  .about-title h1 {
+    font-size: 20em;
+    font-weight: 700;
+    letter-spacing: 0.5em;
   }
   .about-image {
     grid-area: image;
     max-width: 32rem;
     width: 85%;
-    margin:20px;
-    display:flex;
+    margin: 20px;
+    display: flex;
     justify-self: flex-end;
-   
   }
-  .about-image img{
+  .about-image img {
     object-fit: cover;
   }
   .about-container {
@@ -1761,7 +1715,7 @@ MEDIA QUERY - LAPTOP SIZE
     height: 100%;
     grid-area: name;
   }
-  
+
   .about-header h2:first-child {
     margin-right: auto;
     text-align: left;
@@ -1776,22 +1730,21 @@ MEDIA QUERY - LAPTOP SIZE
     font-weight: normal;
     /* margin:.6em; */
   }
-  .about-info-flex{
-    gap:5px;
+  .about-info-flex {
+    gap: 5px;
   }
   .about-info {
     grid-area: info;
-   
+
     margin-bottom: 5em;
-    font-size:2rem;
+    font-size: 2rem;
   }
   .about-info-left h3 {
     font-size: 1.4rem;
   }
   .about-info-right h3 {
     font-size: 1.4rem;
-    margin-left:10px;
-    
+    margin-left: 10px;
   }
 
   .about-info-left {
@@ -1834,7 +1787,7 @@ MEDIA QUERY - LAPTOP SIZE
   .right-exp-col h1 {
     font-size: 3.2rem;
   }
-  
+
   .exp-large-circle {
     font-size: 6.5rem;
   }
@@ -1877,7 +1830,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
 
   /* SKILLS -- LAPTOP  */
- 
+
   .skill-container-left {
     padding: 1.6em;
   }
@@ -1892,7 +1845,7 @@ MEDIA QUERY - LAPTOP SIZE
   }
   .skill-container-right {
     padding: 5em;
-    height: 45em;
+    height: 47em;
   }
 
   .skill-container-right h3 {
@@ -1924,7 +1877,7 @@ MEDIA QUERY - LAPTOP SIZE
     font-size: 2.8rem;
     /* margin-bottom: 2.5em; */
   }
-  .flex-card{
+  .flex-card {
     justify-content: space-between;
   }
 
