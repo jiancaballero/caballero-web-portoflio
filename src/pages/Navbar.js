@@ -77,8 +77,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/jc-caballero-762094192">
-                <i class="fa-brands fa-linkedin" target="_blank"></i>
+              <a
+                href="https://www.linkedin.com/in/jc-caballero-762094192"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li>

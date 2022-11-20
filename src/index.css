@@ -1287,11 +1287,7 @@ textarea:focus {
   color: var(--dark-night-black);
   font-family: "Helvetica Neue";
 }
-<<<<<<< HEAD:assets/css/style.css
 .contact-submit button{
-=======
-.contact-submit-button {
->>>>>>> react-portfolio:src/index.css
   border-radius: 80px;
   background: var(--dark-night-black);
   border: none;
