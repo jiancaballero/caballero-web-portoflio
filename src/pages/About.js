@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import cv from '../assets/images/CABALLERO_RESUME.pdf'
 const fadeInBottom = keyframes`
 0% {
   opacity: 0;
@@ -13,6 +14,7 @@ const fadeInBottom = keyframes`
 const BottomFade = styled.div`
 animation: ${fadeInBottom} 2s both
 `
+
 const About = () => {
   return (
     <section id="about">
@@ -68,7 +70,7 @@ const About = () => {
           </div>
 
           <div className="download-cv-button ">
-            <a href="" className="cv-btn btn button btn-sm">
+            <a  href={cv} download className="cv-btn btn button btn-sm">
               <i className="fa-solid fa-file-arrow-down"></i> DOWNLOAD CV
             </a>
           </div>
