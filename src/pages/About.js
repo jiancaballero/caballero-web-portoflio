@@ -42,14 +42,14 @@ const About = () => {
               <div className="about-info-left">
                 <h3>Name:</h3>
                 <h3>Age:</h3>
-                <h3>Phone:</h3>
+                <h3>Viber:</h3>
                 <h3>Address:</h3>
                 <h3>Email:</h3>
               </div>
               <div className="about-info-right">
                 <h3>Jian Caballero</h3>
                 <h3>23</h3>
-                <h3>+63 977 194 2780</h3>
+                <h3>+63 945 261 9775</h3>
                 <h3>Manila, PH</h3>
                 <h3>jiancaballero@gmail.com</h3>
               </div>

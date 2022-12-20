@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
             <div class="phone-contact flex-container">
               <i class="fa-solid fa-phone"></i>
-              <h2>+63 977 194 2780</h2>
+              <h2>+63 945 261 9775 (Viber)</h2>
             </div>
             <div class="email-contact flex-container">
               <i class="fa-solid fa-envelope"></i>
